@@ -1,0 +1,69 @@
+.introduction {
+    max-width: 75rem;
+    padding: 2.5rem 1.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6.25rem;
+    align-items: center;
+}
+
+.introduction__img {
+    border-radius: .5rem;
+}
+
+.introduction h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+.introduction h1::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg);
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+
+.introduction p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media(max-width: 1000px) {
+    .introduction h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .introduction {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .introduction h1 {
+        font-size: 2rem;
+    }
+
+    .introduction h1::before {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .introduction {
+        grid-template-columns: 1fr;
+        justify-items: center
+    }
+
+    .introduction__img {
+        width: 200px;
+    }
+}

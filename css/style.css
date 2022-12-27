@@ -1,0 +1,7 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./introduction/introduction.css";
+@import "./experience/experience.css";
+@import "./project/project.css";
+@import "./education/education.css";
+@import "./global/footer.css";

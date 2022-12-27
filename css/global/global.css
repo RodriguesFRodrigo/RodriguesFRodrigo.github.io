@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[src$=".jpg"] {
+    border-radius: 4px;
+}
+
+.subtitle {
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    /* Try breaking the word to 4 characters per line when is full */
+    max-width: 4ch;
+}
+
+@media(max-width: 800px) {
+    .subtitle {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important;
+    }
+}

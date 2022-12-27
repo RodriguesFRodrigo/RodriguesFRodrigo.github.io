@@ -1,0 +1,155 @@
+.education {
+    background: #141414;
+    color: #fff;
+}
+
+.education__container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 120px 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6.25rem;
+    position: relative;
+}
+
+.education__container::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+}
+
+.education .subtitle {
+    max-width: 5ch;
+    color: #000;
+}
+
+.education__text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 3.75rem;
+    color: #a3a3a3;
+}
+
+.education__text strong {
+    color: #fff;
+}
+
+.college__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.college {
+    background: #000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.college__type {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.college__course {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+    flex: 1;
+}
+
+.college__course::before {
+    content: '';
+    display: block;
+    width: 0.25rem;
+    height: 1.25rem;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    left: -24px;
+}
+
+.college__institution {
+    font-size: 1.125rem;
+    color: #a3a3a3
+}
+
+.courses {
+    margin-bottom: 60px;
+}
+
+.extra__education h3 {
+    font-size: 0.875;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.extra__education h3::before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('../img/cursos.svg') no-repeat center center;
+    position: absolute;
+    left: -36px;
+}
+
+.courses h3::before {
+    background: url('../img/cursos.svg') no-repeat center center;
+}
+
+.llanguages h3::before {
+    background: url('../img/idiomas.svg') no-repeat center center;
+}
+
+.extra__education li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.extra__education span {
+    color: #8f8f8f;
+}
+
+.courses li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .education__container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .education .subtitle {
+        color: #fff;
+    }
+
+    .education__text {
+        font-size: 1.125rem;
+    }
+
+    .extra__education h3::before {
+        position: initial;
+        margin-bottom: 10px;
+    }
+}
